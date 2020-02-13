@@ -1,0 +1,1 @@
+.ycont{display:flex;flex-direction:column;max-width:1270px;width:100%;position:relative;padding-left:15px;padding-right:15px}.ycont--logoBar,.ycont--regist{flex-direction:row;justify-content:space-between;align-items:center}.ycont--logoBar{padding:15px}.ycont--searchBar{flex-direction:row;justify-content:space-between;align-items:center;padding:10px 15px}
