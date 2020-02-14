@@ -7,3 +7,11 @@
 .wrapper--header {
   flex-direction: column;
 }
+
+.wrapper--slideBar {
+  height: 414px;
+}
+
+.wrapper--company {
+  padding: 58px 0 30px;
+}

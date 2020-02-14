@@ -27,3 +27,9 @@
   align-items: center;
   padding: 10px 15px;
 }
+
+.ycont--company {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
