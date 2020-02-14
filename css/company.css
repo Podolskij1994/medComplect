@@ -119,3 +119,34 @@
   width: 100%;
   text-align: center;
 }
+
+.company--bottom__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.company--bottom__img {
+  margin: 0 auto 5px;
+  display: block;
+}
+
+.company--bottom__text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.28571em;
+  line-height: 1.2222em;
+  color: #1c1c1c;
+  position: relative;
+}
+
+.company--bottom__text::after {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 2px;
+  background: #01BAD6;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2px;
+}

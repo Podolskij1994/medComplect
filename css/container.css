@@ -33,3 +33,11 @@
   justify-content: space-between;
   align-items: start;
 }
+
+.ycont--company_top {
+  margin-bottom: 70px;
+}
+
+.ycont--company_bottom {
+  display: block;
+}
