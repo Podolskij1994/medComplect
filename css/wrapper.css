@@ -16,3 +16,15 @@
   padding: 58px 0 30px;
   display: block;
 }
+
+.wrapper--partners {
+  padding: 30px 0 40px;
+}
+
+.wrapper--recomend {
+  padding: 30px 0 100px;
+}
+
+.wrapper--footer {
+  height: 1500px;
+}

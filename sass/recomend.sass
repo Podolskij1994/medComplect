@@ -1,0 +1,131 @@
+.recomend
+    &__list
+        display: flex
+        justify-content: space-between
+    &--item
+        position: relative
+        width: 272px
+        height: 458px
+        background: #ffffff
+        border: 1px solid #EEEEEE
+        border-radius: 5px
+        padding: 25px 16px 0 24px
+        &__back
+            width: 100%
+            height: 100%
+            background: #ffffff
+            position: absolute
+            left: 0
+            top: 0
+            padding: 47px 24px 24px 37px
+            border-radius: 5px
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+            opacity: 0
+            display: none
+            & svg
+                position: absolute
+                top: 12px
+                right: 10px
+                &:hover
+                        cursor: pointer
+                        &>path
+                            fill-opacity: 0.5
+                & path
+                    fill: #000000
+                    transition: 0.3s
+            &--title
+                font-weight: 600
+                font-size: 1em
+                line-height: 1.214285em
+                margin-bottom: 20px
+            &--text
+                font-weight: 500
+                font-size: 1em
+                line-height: 1.214285em
+        &__img
+            margin-bottom: 20px
+        &__title
+            font-size: 1.142857em
+            line-height: 1.25em
+            font-weight: 500
+            margin-bottom: 18px
+            text-align: center
+        &__row
+            display: flex
+            align-items: center
+        &__text
+            font-size: 0.857142em
+            line-height: 1.25em
+            margin-bottom: 5px
+            &_left
+                width: 135px
+            &_right 
+                width: 100px
+            &_link
+                display: block
+                color: #01BAD6
+                text-decoration: underline
+        &__juridical
+            width: 169px
+            height: 30px
+            border-radius: 35px
+            margin-right: 15px
+        &__shop-card
+            background: #01BAD6 url("../img/shopping-cart.png") no-repeat center center
+            width: 30px
+            height: 30px
+            border-radius: 42px
+        &__button
+            width: 214px
+            height: 30px
+            margin: 9px 0 10px
+            border-radius: 35px
+            background: #DE4D43
+            color: 14px
+            line-height: 1.14285em
+            color: #ffffff
+            border: 0
+            transition: 0.3s
+            &:hover
+                opacity: 0.9
+            &:active
+                background: #e45d53
+                opacity: 1
+        &__cost
+            font-size: 1.14285em
+            line-height: 1.25em
+            font-weight: 500
+            color: #4F4F4F
+            text-align: center
+            white-space: pre
+            margin-bottom: 6px
+            &_bold
+                font-weight: 700
+                color: #1C1C1C
+            &_small
+                font-size: 0.85em
+        &__stars
+            margin: 0px auto
+            width: max-content
+            &-star
+                margin: 0 3px
+        &__circles
+            position: absolute
+            top: 10px
+            right: 12px
+            width: 10px
+            &:hover
+                cursor: pointer
+            &_circle
+                width: 4px
+                height: 4px
+                border-radius: 50%
+                background: #707070
+                margin: 0 auto 3px
+        &__balance
+            position: absolute
+            top: 11px
+            left: 10px
+            &:hover
+                cursor: pointer
+
