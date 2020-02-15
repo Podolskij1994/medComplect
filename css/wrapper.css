@@ -30,6 +30,10 @@
   background: #F1F1F1;
 }
 
+.wrapper--news {
+  padding: 55px 0 100px;
+}
+
 .wrapper--footer {
   height: 1500px;
 }
