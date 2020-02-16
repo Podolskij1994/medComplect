@@ -13,6 +13,7 @@
             background: #ffffff
             border-radius: 0 0 5px 5px
             padding: 35px 40px 42px
+            margin: 0
     &--list
         display: flex
         align-items: center
@@ -43,3 +44,133 @@
             border-top-left-radius: 5px
         &:nth-last-child(1)
             border-top-right-radius: 5px
+    &--bottom
+        &__item
+            display: none
+            &_active
+                display: block
+    &--description
+        &__text
+            font-size: 1.142857em
+            line-height: 1.25em
+            margin: 0
+            margin-bottom: 33px
+            color: #484848
+            letter-spacing: 0.035em
+            &:nth-last-child(1)
+                margin-bottom: 0
+    &--character
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__row
+            display: flex
+            justify-content: space-between
+            width: 273px
+            margin-bottom: 9px
+        &__left
+            font-size: 1.14285em
+            line-height: 1.25em
+            font-weight: 300
+            color: #535353
+        &__right
+            font-size: 1.14285em
+            line-height: 1.25em
+        &__line
+            height: 240px
+            width: 1px
+            background: #A6A6A6
+    &--review
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            margin: 21px 0 -9px
+        &__left
+            padding-top: 12px
+        &__slider
+            position: relative
+            padding: 0 50px 0 
+        &__item
+        &__row
+            display: flex
+            margin-bottom: 15px
+        &__img
+            width: 50px
+            height: 50px
+            margin-right: 7px
+            background: #80C9D4;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+            border-radius: 50%
+        &__column
+        &__name
+            font-size: 1.42857em
+            line-height: 1.2em
+            font-weight: 500
+        &__stars
+            display: flex
+            justify-content: space-between
+            width: 95px
+            & img
+                width: 15px
+                height: 15px
+        &__text
+            font-size: 1.14285em
+            line-height: 1.25em
+            font-weight: 300
+            letter-spacing: 0.025em
+            width: 465px
+        &__right
+            width: 380px
+        &__title
+            font-size: 1.42857em
+            line-height: 1.2em
+            font-weight: 600
+            color: #1c1c1c
+            margin-bottom: 30px
+        &__input
+            width: 380px
+            padding: 0 5px 6px 1px
+            border: 0
+            border-bottom: 1px solid #979797
+            margin-bottom: 33px
+            &_margin
+                margin-bottom: 19px
+            &-stars
+                width: 100px
+                display: flex
+                justify-content: space-between
+                margin: 0px auto 17px
+                & img
+                    width: 20px
+                    height: 20px
+                    &:hover
+                        cursor: pointer
+        &__btn
+            width: 200px
+            height: 40px
+            border-radius: 113px
+            margin: 0px auto
+            display: block
+        &__star-text
+            font-size: 0.71428em
+            line-height: 1.2em
+            font-weight: 300
+            text-align: center
+            margin-top: 15px
+            &_link
+                color: #01BAD6
+    &--recently
+        &__wrapper
+            position: relative
+            padding: 0 61px
+    &--documentation
+        &__text
+            font-size: 1.142857em
+            line-height: 1.25em
+            margin: 0
+            margin-bottom: 33px
+            color: #484848
+            letter-spacing: 0.035em
+            &:nth-last-child(1)
+                margin-bottom: 0
