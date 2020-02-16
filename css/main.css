@@ -285,6 +285,7 @@ p {
 
 .wrapper--slideBar {
   height: 414px;
+  padding: 74px 0 0;
 }
 
 .wrapper--company {
@@ -307,6 +308,34 @@ p {
 
 .wrapper--news {
   padding: 55px 0 100px;
+}
+
+.wrapper--nav {
+  padding: 21px 0 30px;
+}
+
+.wrapper--search {
+  padding: 0 0 62px;
+}
+
+.wrapper--product {
+  padding: 16px 0 20px;
+}
+
+.wrapper--delivery {
+  padding: 30px 0 50px;
+}
+
+.wrapper--about {
+  padding: 0 0 20px;
+}
+
+.wrapper--seem {
+  padding: 30px 0 26px;
+}
+
+.wrapper--withBuy {
+  padding: 30px 0 20px;
 }
 
 .wrapper--footer {
@@ -360,6 +389,18 @@ p {
   display: block;
 }
 
+.ycont--nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.ycont--product {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .ycont--footer {
   flex-direction: column;
 }
@@ -376,6 +417,72 @@ p {
   line-height: 1.214em;
   font-weight: 700;
   color: #1C1C1C;
+}
+
+.about--wrapper {
+  width: 100%;
+}
+
+.about--wrapper__top {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  background: #80C9D4;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.about--wrapper__bottom {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+  padding: 35px 40px 42px;
+}
+
+.about--list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about--item {
+  width: 20%;
+  text-align: center;
+  font-size: 1.42857em;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.about--item p {
+  margin: 0px auto;
+}
+
+.about--item:hover {
+  background: rgba(1, 186, 214, 0.7);
+  cursor: pointer;
+}
+
+.about--item_active {
+  background: #01BAD6;
+}
+
+.about--item_active:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+.about--item:nth-child(1) {
+  border-top-left-radius: 5px;
+}
+
+.about--item:nth-last-child(1) {
+  border-top-right-radius: 5px;
 }
 
 .company--left__subtitle {
@@ -529,6 +636,88 @@ p {
   left: 50%;
   transform: translateX(-50%);
   bottom: -2px;
+}
+
+.delivery__title {
+  margin-bottom: 25px;
+}
+
+.delivery--wrapper {
+  width: 100%;
+  height: 194px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 33px 70px 20px;
+}
+
+.delivery--list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery--item {
+  padding-left: 90px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+}
+
+.delivery--item:nth-child(1) {
+  background: url("../img/byTrack.png") no-repeat left center;
+}
+
+.delivery--item:nth-child(2) {
+  background: url("../img/byAirplane.png") no-repeat left center;
+}
+
+.delivery--item:nth-child(3) {
+  background: url("../img/byYourself.png") no-repeat left center;
+}
+
+.delivery--item__title {
+  font-size: 1.28571em;
+  line-height: 1.2222em;
+  color: #1c1c1c;
+  font-weight: 500;
+}
+
+.delivery--item__text {
+  font-size: 1em;
+  line-height: 1.214em;
+  font-weight: 500;
+  color: #646464;
+}
+
+.delivery__text {
+  font-size: 1.1428em;
+  line-height: 1.25em;
+  color: #646464;
+}
+
+.delivery__text_color {
+  color: #01BAD6;
+}
+
+.delivery__text_bold {
+  font-weight: 500;
+}
+
+.nav__link {
+  font-size: 1em;
+  line-height: 1.2142em;
+  color: #9E9E9E;
+}
+
+.nav__link_active {
+  color: #2F80ED;
+  font-size: 0.85714em;
+  line-height: 1.25em;
+}
+
+.nav__arrow {
+  margin: 0 10px;
 }
 
 .news__title {
@@ -900,6 +1089,77 @@ p {
 
 .recomend--item__balance:hover {
   cursor: pointer;
+}
+
+.search--left {
+  width: 270px;
+  height: 1240px;
+  padding: 35px 10px 32px 23px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.slideBar__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: max-content;
+  margin: 0px auto;
+}
+
+.slideBar__title {
+  font-size: 2.57142em;
+  line-height: 1.07em;
+  font-weight: 700;
+  color: #0D2730;
+  letter-spacing: -0.035em;
+  margin-bottom: 15px;
+}
+
+.slideBar__title_bold {
+  font-weight: 900;
+}
+
+.slideBar__text {
+  font-size: 1.142857em;
+  line-height: 1.25em;
+  color: #1c1c1c;
+}
+
+.slideBar__circles {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: flex;
+}
+
+.slideBar__circles-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(52, 94, 107, 0.5);
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.slideBar__circles-circle:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.slideBar__circles-circle:hover {
+  background: rgba(52, 94, 107, 0.8);
+  cursor: pointer;
+}
+
+.slideBar__circles-circle_active {
+  background: #345E6B;
+}
+
+.slideBar__circles-circle_active:hover {
+  background: #345E6B;
+  cursor: default;
 }
 
 .webShop__title {

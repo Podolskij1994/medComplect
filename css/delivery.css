@@ -1,0 +1,65 @@
+.delivery__title {
+  margin-bottom: 25px;
+}
+
+.delivery--wrapper {
+  width: 100%;
+  height: 194px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 33px 70px 20px;
+}
+
+.delivery--list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery--item {
+  padding-left: 90px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+}
+
+.delivery--item:nth-child(1) {
+  background: url("../img/byTrack.png") no-repeat left center;
+}
+
+.delivery--item:nth-child(2) {
+  background: url("../img/byAirplane.png") no-repeat left center;
+}
+
+.delivery--item:nth-child(3) {
+  background: url("../img/byYourself.png") no-repeat left center;
+}
+
+.delivery--item__title {
+  font-size: 1.28571em;
+  line-height: 1.2222em;
+  color: #1c1c1c;
+  font-weight: 500;
+}
+
+.delivery--item__text {
+  font-size: 1em;
+  line-height: 1.214em;
+  font-weight: 500;
+  color: #646464;
+}
+
+.delivery__text {
+  font-size: 1.1428em;
+  line-height: 1.25em;
+  color: #646464;
+}
+
+.delivery__text_color {
+  color: #01BAD6;
+}
+
+.delivery__text_bold {
+  font-weight: 500;
+}

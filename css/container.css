@@ -43,6 +43,18 @@
   display: block;
 }
 
+.ycont--nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.ycont--product {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .ycont--footer {
   flex-direction: column;
 }

@@ -1,0 +1,15 @@
+.nav__link {
+  font-size: 1em;
+  line-height: 1.2142em;
+  color: #9E9E9E;
+}
+
+.nav__link_active {
+  color: #2F80ED;
+  font-size: 0.85714em;
+  line-height: 1.25em;
+}
+
+.nav__arrow {
+  margin: 0 10px;
+}

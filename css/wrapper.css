@@ -10,6 +10,7 @@
 
 .wrapper--slideBar {
   height: 414px;
+  padding: 74px 0 0;
 }
 
 .wrapper--company {
@@ -32,6 +33,34 @@
 
 .wrapper--news {
   padding: 55px 0 100px;
+}
+
+.wrapper--nav {
+  padding: 21px 0 30px;
+}
+
+.wrapper--search {
+  padding: 0 0 62px;
+}
+
+.wrapper--product {
+  padding: 16px 0 20px;
+}
+
+.wrapper--delivery {
+  padding: 30px 0 50px;
+}
+
+.wrapper--about {
+  padding: 0 0 20px;
+}
+
+.wrapper--seem {
+  padding: 30px 0 26px;
+}
+
+.wrapper--withBuy {
+  padding: 30px 0 20px;
 }
 
 .wrapper--footer {
