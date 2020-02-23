@@ -35,8 +35,21 @@
   align-items: start;
 }
 
+@media (max-width: 1200px) {
+  .ycont--company {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .ycont--company_top {
   margin-bottom: 70px;
+}
+
+@media (max-width: 1200px) {
+  .ycont--company_top {
+    margin-bottom: 30px;
+  }
 }
 
 .ycont--company_bottom {
@@ -47,11 +60,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
+  flex-wrap: wrap;
 }
 
 .ycont--product {
   flex-direction: row;
   align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .ycont--product {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .ycont--search {

@@ -1,3 +1,4 @@
+@import "media";
 .ycont
 	display: flex
 	flex-direction: column
@@ -26,17 +27,26 @@
 		flex-direction: row
 		justify-content: space-between
 		align-items: start
+		@media (max-width: $media-pc)
+			flex-direction: column
+			align-items: center
 		&_top
 			margin-bottom: 70px
+			@media (max-width: $media-pc)
+				margin-bottom: 30px
 		&_bottom
 			display: block
 	&--nav
 		flex-direction: row
 		align-items: center
 		justify-content: start
+		flex-wrap: wrap
 	&--product
 		flex-direction: row
 		align-items: start
+		@media (max-width: $media-pc)
+			flex-direction: column
+			align-items: center
 	&--search
 		flex-direction: row
 		justify-content: 

@@ -67,6 +67,8 @@
 
 .about--bottom__item {
   display: none;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 .about--bottom__item_active {
@@ -234,6 +236,18 @@
 .about--recently__wrapper {
   position: relative;
   padding: 0 61px;
+}
+
+.about--recently__wrapper--list {
+  display: block;
+}
+
+.about--recently__wrapper--list .recomend--item {
+  margin: 0px auto;
+}
+
+.about--recently__wrapper--list .recomend--item img {
+  display: inline-block;
 }
 
 .about--documentation__text {

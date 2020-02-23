@@ -1,9 +1,10 @@
+@import "media" ;
 .news
     &__title
         margin-bottom: 40px
+        @media (max-width:$media-pc)
+            margin-bottom: 20px
     &--slider
-        display: flex
-        justify-content: space-between
     &--slide
         width: 270px
         height: 350px
@@ -11,6 +12,7 @@
         border-radius: 5px
         background-position: center center
         padding: 256px 8px 0 15px
+        margin: 0px auto
         &__text
             font-weight: 600
             font-size: 1.07142em

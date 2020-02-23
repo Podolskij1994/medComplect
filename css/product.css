@@ -8,10 +8,28 @@
   margin-right: 45px;
 }
 
+@media (max-width: 1200px) {
+  .product--img {
+    max-width: 300px;
+    padding: 10px;
+    height: auto;
+  }
+}
+
 .product--img__img {
   width: 357px;
   height: 290px;
   margin-bottom: 29px;
+}
+
+@media (max-width: 1200px) {
+  .product--img__img {
+    max-width: 357px;
+    width: 100%;
+    margin: 0px auto 19px;
+    display: block;
+    height: auto;
+  }
 }
 
 .product--slider {
@@ -32,8 +50,12 @@
   background: url("../img/product1.png") no-repeat center center/contain;
 }
 
-.product--slider__slide_active {
-  border: 1px solid #01BAD6;
+@media (max-width: 1200px) {
+  .product--slider__slide {
+    width: 70px;
+    height: 70px;
+    margin: 0px auto;
+  }
 }
 
 .product--slider__slide:hover {
@@ -47,6 +69,13 @@
 
 .product--slider > .arrow--right {
   right: -15px;
+}
+
+@media (max-width: 1200px) {
+  .product--right {
+    width: 300px;
+    margin-top: 25px;
+  }
 }
 
 .product--right__have {
@@ -107,9 +136,10 @@
 }
 
 .product--right__line {
-  width: 471px;
+  max-width: 471px;
   height: 1px;
   background: #E7E7E7;
+  width: 95%;
 }
 
 .product--right__count {
@@ -139,6 +169,13 @@
   border-radius: 113px;
 }
 
+@media (max-width: 1200px) {
+  .product--right__button {
+    width: 140px;
+    height: 30px;
+  }
+}
+
 .product--right__button_cart {
   margin-right: 25px;
 }
@@ -146,6 +183,12 @@
 .product--right__button_juridical {
   background: #D96860;
   margin-right: 25px;
+}
+
+@media (max-width: 1200px) {
+  .product--right__button_juridical {
+    width: 150px;
+  }
 }
 
 .product--right__button_juridical:hover {
@@ -205,6 +248,12 @@
   display: flex;
 }
 
+@media (max-width: 1200px) {
+  .product--count {
+    margin-right: 10px;
+  }
+}
+
 .product--count__operation {
   display: flex;
   align-items: center;
@@ -215,6 +264,13 @@
   background: #ffffff;
   margin: 0;
   transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .product--count__operation {
+    width: 25px;
+    height: 18px;
+  }
 }
 
 .product--count__operation:hover {
@@ -242,6 +298,13 @@
   border-width: 1px 0;
   width: 54px;
   height: 35px;
+}
+
+@media (max-width: 1200px) {
+  .product--count__num {
+    width: 25px;
+    height: 18px;
+  }
 }
 
 .product--count__num p {

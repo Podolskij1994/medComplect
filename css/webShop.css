@@ -11,10 +11,23 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 1200px) {
+  .webShop__text {
+    margin-bottom: 15px;
+  }
+}
+
 .webShop--list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .webShop--list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .webShop--item {
@@ -26,6 +39,12 @@
   border: 1px solid #E8E8E8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.14);
   margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .webShop--item {
+    margin-bottom: 20px;
+  }
 }
 
 .webShop--item:hover > .webShop--item__img > .webShop--item__back {

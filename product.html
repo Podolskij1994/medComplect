@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="ru">
 	<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900|Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
- 	<title>medComplect</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900|Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>medComplect</title>
  	</head>
  	<body>
 		<header class="wrapper wrapper--header">
@@ -192,9 +193,21 @@
 						<div class="arrow arrow--left"></div>
 						<div class="arrow arrow--right"></div>
 						<ul class="product--slider__slides">
-							<li class="product--slider__slide"></li>
-							<li class="product--slider__slide product--slider__slide_active"></li>
-							<li class="product--slider__slide"></li>
+							<div class="product--slider__wrapper">
+								<li class="product--slider__slide"></li>
+							</div>
+							<div class="product--slider__wrapper">
+								<li class="product--slider__slide product--slider__slide_active"></li>
+							</div>
+							<div class="product--slider__wrapper">
+								<li class="product--slider__slide"></li>
+							</div>
+							<div class="product--slider__wrapper">
+								<li class="product--slider__slide"></li>
+							</div>
+							<div class="product--slider__wrapper">
+								<li class="product--slider__slide"></li>
+							</div>
 						</ul>
 					</div>
 				</div>
@@ -360,7 +373,7 @@
 							<li class="about--item">
 								<p>Характеристики</p>
 							</li>
-							<li class="about--item">
+							<li class="about--item ">
 								<p>Отзывы</p>
 							</li>
 							<li class="about--item">
@@ -372,7 +385,7 @@
 						</ul>
 					</div>
 					<ul class="about--wrapper__bottom">
-						<li class="about--description  about--bottom__item">
+						<li class="about--description  about--bottom__item about--bottom__item_active">
 							<p class="about--description__text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. At malesuada ipsum, arcu enim sed. Sed et nisl vel sed eu vel consequat viverra. Tristique enim morbi aenean eu, ornare sagittis. Eu eros nibh in odio vitae. Volutpat ut pellentesque ipsum quis curabitur vel urna tortor a. Sed at at faucibus tellus elit, fringilla quis massa, purus. Egestas feugiat odio auctor sit ac lacus urna. Arcu ut sed quis purus, risus, nibh volutpat. Adipiscing nibh vitae, pharetra vitae nulla nisl viverra ultrices. Ac condimentum id ultricies vitae proin varius.
 								Arcu auctor mattis lacus velit, orci egestas non in. Tortor blandit cras viverra lacus lacus. Interdum aliquam ullamcorper tortor orci arcu sollicitudin sem egestas. Massa ac amet at amet pellentesque massa commodo turpis. Lobortis aliquam praesent sapien auctor consectetur pharetra.
@@ -633,7 +646,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="about--review about--bottom__item about--bottom__item_active"> 
+						<li class="about--review about--bottom__item "> 
 							<div class="about--review__wrapper">
 								<div class="about--review__left">
 									<ul class="about--review__slider">
@@ -698,235 +711,397 @@
 							<div class="about--recently__wrapper">
 								<div class="arrow arrow--left"></div>
 								<div class="arrow arrow--right"></div>
-								<ul class="recomend__list">
-									<li class="recomend--item">
-										<div class="recomend--item__balance balance">
-											<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
-											<div class="recomend--item__balance--circle">1</div>
-										</div>
-										<div class="recomend--item__circles">
-											<div class="recomend--item__circles_circle"></div>
-											<div class="recomend--item__circles_circle"></div>
-											<div class="recomend--item__circles_circle"></div>
-										</div>
-										<img src="./img/recomend.png" alt="product" class="recomend--item__img">
-										<p class="recomend--item__title">
-											Отсасыватель Армед 7А
-										</p>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Код товара:
+								<ul class="recomend__list about--recently__wrapper--list">
+									<div class="recommend__list--wrapper">
+										<li class="recomend--item">
+											<div class="recomend--item__balance balance">
+												<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
+												<div class="recomend--item__balance--circle">1</div>
+											</div>
+											<div class="recomend--item__circles">
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+											</div>
+											<img src="./img/recomend.png" alt="product" class="recomend--item__img">
+											<p class="recomend--item__title">
+												Отсасыватель Армед 7А
 											</p>
-											<p class="recomend--item__text recomend--item__text_right">
-												7A
-											</p>
-										</div>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Производитель:
-											</p>
-											<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
-												Армед
-											</a>
-										</div>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Категория:
-											</p>
-											<p class="recomend--item__text recomend--item__text_right">
-												Мед.  
-												оборудование
-											</p>
-										</div>
-										<div class="recomend--item__row">
-											<button class="recomend--item__juridical button roboto">
-												Заказ для юр.лица
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Код товара:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													7A
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Производитель:
+												</p>
+												<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
+													Армед
+												</a>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Категория:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													Мед.  
+													оборудование
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<button class="recomend--item__juridical button roboto">
+													Заказ для юр.лица
+												</button>
+												<button class="recomend--item__shop-card button"></button>
+											</div>
+											<button class="recomend--item__button roboto">
+												Купить
 											</button>
-											<button class="recomend--item__shop-card button"></button>
-										</div>
-										<button class="recomend--item__button roboto">
-											Купить
-										</button>
-										<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
-										<div class="recomend--item__stars">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-										</div>
-										<div class="recomend--item__back">
-											<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
-											</svg>
-											<p class="recomend--item__back--title">
-												Концентратор кислорода Армед 7F-1L
+											<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
+											<div class="recomend--item__stars">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+											</div>
+											<div class="recomend--item__back">
+												<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
+												</svg>
+												<p class="recomend--item__back--title">
+													Концентратор кислорода Армед 7F-1L
+												</p>
+												<p class="recomend--item__back--text">
+													Широко известный <br>
+													1-литровый концентратор <br>
+													кислорода с доступной <br>
+													стоимостью.. Применяется <br>
+													для профилактики <br>
+													заболеваний дыхательных <br>
+													путей. Отличный вариант <br>
+													для домашнего <br>
+													использования.. <br>
+												</p>
+											</div>
+										</li>
+									</div>
+									<div class="recommend__list--wrapper">
+										<li class="recomend--item">
+											<div class="recomend--item__balance balance">
+												<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
+												<div class="recomend--item__balance--circle">1</div>
+											</div>
+											<div class="recomend--item__circles">
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+											</div>
+											<img src="./img/recomend.png" alt="product" class="recomend--item__img">
+											<p class="recomend--item__title">
+												Отсасыватель Армед 7А
 											</p>
-											<p class="recomend--item__back--text">
-												Широко известный <br>
-												1-литровый концентратор <br>
-												кислорода с доступной <br>
-												стоимостью.. Применяется <br>
-												для профилактики <br>
-												заболеваний дыхательных <br>
-												путей. Отличный вариант <br>
-												для домашнего <br>
-												использования.. <br>
-											</p>
-										</div>
-									</li>
-									<li class="recomend--item">
-										<div class="recomend--item__balance balance">
-											<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
-											<div class="recomend--item__balance--circle">1</div>
-										</div>
-										<div class="recomend--item__circles">
-											<div class="recomend--item__circles_circle"></div>
-											<div class="recomend--item__circles_circle"></div>
-											<div class="recomend--item__circles_circle"></div>
-										</div>
-										<img src="./img/recomend.png" alt="product" class="recomend--item__img">
-										<p class="recomend--item__title">
-											Отсасыватель Армед 7А
-										</p>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Код товара:
-											</p>
-											<p class="recomend--item__text recomend--item__text_right">
-												7A
-											</p>
-										</div>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Производитель:
-											</p>
-											<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
-												Армед
-											</a>
-										</div>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Категория:
-											</p>
-											<p class="recomend--item__text recomend--item__text_right">
-												Мед.  
-												оборудование
-											</p>
-										</div>
-										<div class="recomend--item__row">
-											<button class="recomend--item__juridical button roboto">
-												Заказ для юр.лица
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Код товара:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													7A
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Производитель:
+												</p>
+												<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
+													Армед
+												</a>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Категория:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													Мед.  
+													оборудование
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<button class="recomend--item__juridical button roboto">
+													Заказ для юр.лица
+												</button>
+												<button class="recomend--item__shop-card button"></button>
+											</div>
+											<button class="recomend--item__button roboto">
+												Купить
 											</button>
-											<button class="recomend--item__shop-card button"></button>
-										</div>
-										<button class="recomend--item__button roboto">
-											Купить
-										</button>
-										<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
-										<div class="recomend--item__stars">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-										</div>
-										<div class="recomend--item__back">
-											<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
-											</svg>
-											<p class="recomend--item__back--title">
-												Концентратор кислорода Армед 7F-1L
+											<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
+											<div class="recomend--item__stars">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+											</div>
+											<div class="recomend--item__back">
+												<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
+												</svg>
+												<p class="recomend--item__back--title">
+													Концентратор кислорода Армед 7F-1L
+												</p>
+												<p class="recomend--item__back--text">
+													Широко известный <br>
+													1-литровый концентратор <br>
+													кислорода с доступной <br>
+													стоимостью.. Применяется <br>
+													для профилактики <br>
+													заболеваний дыхательных <br>
+													путей. Отличный вариант <br>
+													для домашнего <br>
+													использования.. <br>
+												</p>
+											</div>
+										</li>
+									</div>
+									<div class="recommend__list--wrapper">
+										<li class="recomend--item">
+											<div class="recomend--item__balance balance">
+												<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
+												<div class="recomend--item__balance--circle">1</div>
+											</div>
+											<div class="recomend--item__circles">
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+											</div>
+											<img src="./img/recomend.png" alt="product" class="recomend--item__img">
+											<p class="recomend--item__title">
+												Отсасыватель Армед 7А
 											</p>
-											<p class="recomend--item__back--text">
-												Широко известный <br>
-												1-литровый концентратор <br>
-												кислорода с доступной <br>
-												стоимостью.. Применяется <br>
-												для профилактики <br>
-												заболеваний дыхательных <br>
-												путей. Отличный вариант <br>
-												для домашнего <br>
-												использования.. <br>
-											</p>
-										</div>
-									</li>
-									<li class="recomend--item">
-										<div class="recomend--item__balance balance">
-											<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
-											<div class="recomend--item__balance--circle">1</div>
-										</div>
-										<div class="recomend--item__circles">
-											<div class="recomend--item__circles_circle"></div>
-											<div class="recomend--item__circles_circle"></div>
-											<div class="recomend--item__circles_circle"></div>
-										</div>
-										<img src="./img/recomend.png" alt="product" class="recomend--item__img">
-										<p class="recomend--item__title">
-											Отсасыватель Армед 7А
-										</p>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Код товара:
-											</p>
-											<p class="recomend--item__text recomend--item__text_right">
-												7A
-											</p>
-										</div>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Производитель:
-											</p>
-											<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
-												Армед
-											</a>
-										</div>
-										<div class="recomend--item__row">
-											<p class="recomend--item__text recomend--item__text_left">
-												Категория:
-											</p>
-											<p class="recomend--item__text recomend--item__text_right">
-												Мед.  
-												оборудование
-											</p>
-										</div>
-										<div class="recomend--item__row">
-											<button class="recomend--item__juridical button roboto">
-												Заказ для юр.лица
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Код товара:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													7A
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Производитель:
+												</p>
+												<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
+													Армед
+												</a>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Категория:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													Мед.  
+													оборудование
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<button class="recomend--item__juridical button roboto">
+													Заказ для юр.лица
+												</button>
+												<button class="recomend--item__shop-card button"></button>
+											</div>
+											<button class="recomend--item__button roboto">
+												Купить
 											</button>
-											<button class="recomend--item__shop-card button"></button>
-										</div>
-										<button class="recomend--item__button roboto">
-											Купить
-										</button>
-										<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
-										<div class="recomend--item__stars">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-											<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
-										</div>
-										<div class="recomend--item__back">
-											<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
-											</svg>
-											<p class="recomend--item__back--title">
-												Концентратор кислорода Армед 7F-1L
+											<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
+											<div class="recomend--item__stars">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+											</div>
+											<div class="recomend--item__back">
+												<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
+												</svg>
+												<p class="recomend--item__back--title">
+													Концентратор кислорода Армед 7F-1L
+												</p>
+												<p class="recomend--item__back--text">
+													Широко известный <br>
+													1-литровый концентратор <br>
+													кислорода с доступной <br>
+													стоимостью.. Применяется <br>
+													для профилактики <br>
+													заболеваний дыхательных <br>
+													путей. Отличный вариант <br>
+													для домашнего <br>
+													использования.. <br>
+												</p>
+											</div>
+										</li>
+									</div>
+									<div class="recommend__list--wrapper">
+										<li class="recomend--item">
+											<div class="recomend--item__balance balance">
+												<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
+												<div class="recomend--item__balance--circle">1</div>
+											</div>
+											<div class="recomend--item__circles">
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+											</div>
+											<img src="./img/recomend.png" alt="product" class="recomend--item__img">
+											<p class="recomend--item__title">
+												Отсасыватель Армед 7А
 											</p>
-											<p class="recomend--item__back--text">
-												Широко известный <br>
-												1-литровый концентратор <br>
-												кислорода с доступной <br>
-												стоимостью.. Применяется <br>
-												для профилактики <br>
-												заболеваний дыхательных <br>
-												путей. Отличный вариант <br>
-												для домашнего <br>
-												использования.. <br>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Код товара:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													7A
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Производитель:
+												</p>
+												<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
+													Армед
+												</a>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Категория:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													Мед.  
+													оборудование
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<button class="recomend--item__juridical button roboto">
+													Заказ для юр.лица
+												</button>
+												<button class="recomend--item__shop-card button"></button>
+											</div>
+											<button class="recomend--item__button roboto">
+												Купить
+											</button>
+											<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
+											<div class="recomend--item__stars">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+											</div>
+											<div class="recomend--item__back">
+												<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
+												</svg>
+												<p class="recomend--item__back--title">
+													Концентратор кислорода Армед 7F-1L
+												</p>
+												<p class="recomend--item__back--text">
+													Широко известный <br>
+													1-литровый концентратор <br>
+													кислорода с доступной <br>
+													стоимостью.. Применяется <br>
+													для профилактики <br>
+													заболеваний дыхательных <br>
+													путей. Отличный вариант <br>
+													для домашнего <br>
+													использования.. <br>
+												</p>
+											</div>
+										</li>
+									</div>
+									<div class="recommend__list--wrapper">
+										<li class="recomend--item">
+											<div class="recomend--item__balance balance">
+												<img src="./img/balance.svg" alt="cart" class="recomend--item__balance--img">
+												<div class="recomend--item__balance--circle">1</div>
+											</div>
+											<div class="recomend--item__circles">
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+												<div class="recomend--item__circles_circle"></div>
+											</div>
+											<img src="./img/recomend.png" alt="product" class="recomend--item__img">
+											<p class="recomend--item__title">
+												Отсасыватель Армед 7А
 											</p>
-										</div>
-									</li>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Код товара:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													7A
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Производитель:
+												</p>
+												<a class="recomend--item__text recomend--item__text_link recomend--item__text_right">
+													Армед
+												</a>
+											</div>
+											<div class="recomend--item__row">
+												<p class="recomend--item__text recomend--item__text_left">
+													Категория:
+												</p>
+												<p class="recomend--item__text recomend--item__text_right">
+													Мед.  
+													оборудование
+												</p>
+											</div>
+											<div class="recomend--item__row">
+												<button class="recomend--item__juridical button roboto">
+													Заказ для юр.лица
+												</button>
+												<button class="recomend--item__shop-card button"></button>
+											</div>
+											<button class="recomend--item__button roboto">
+												Купить
+											</button>
+											<p class="recomend--item__cost">Цена:   <span class="recomend--item__cost_bold">24 900<span class="recomend--item__cost_small">₽</span></span></p>
+											<div class="recomend--item__stars">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+												<img src="./img/star.png" alt="star" class="recomend--item__stars-srar">
+											</div>
+											<div class="recomend--item__back">
+												<svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" class="header-menu__close">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.673.327a1.118 1.118 0 0 0-1.581 0L11 9.42 1.909.327A1.118 1.118 0 0 0 .327 1.91L9.42 11 .327 20.091a1.118 1.118 0 1 0 1.582 1.581L11 12.582l9.091 9.09a1.118 1.118 0 1 0 1.581-1.58L12.582 11l9.09-9.091a1.118 1.118 0 0 0 0-1.582z" fill-opacity="1"></path>
+												</svg>
+												<p class="recomend--item__back--title">
+													Концентратор кислорода Армед 7F-1L
+												</p>
+												<p class="recomend--item__back--text">
+													Широко известный <br>
+													1-литровый концентратор <br>
+													кислорода с доступной <br>
+													стоимостью.. Применяется <br>
+													для профилактики <br>
+													заболеваний дыхательных <br>
+													путей. Отличный вариант <br>
+													для домашнего <br>
+													использования.. <br>
+												</p>
+											</div>
+										</li>
+									</div>
 								</ul>
 							</div>
 						</li>

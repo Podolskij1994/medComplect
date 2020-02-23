@@ -47,6 +47,8 @@
     &--bottom
         &__item
             display: none
+            animation-name: fadeIn
+            animation-duration: 2s
             &_active
                 display: block
     &--description
@@ -164,6 +166,12 @@
         &__wrapper
             position: relative
             padding: 0 61px
+            &--list
+                display: block
+                & .recomend--item
+                    margin: 0px auto
+                    & img
+                        display: inline-block
     &--documentation
         &__text
             font-size: 1.142857em
