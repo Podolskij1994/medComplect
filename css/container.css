@@ -54,6 +54,11 @@
   align-items: start;
 }
 
+.ycont--search {
+  flex-direction: row;
+  align-items: start;
+}
+
 .ycont--footer {
   flex-direction: column;
 }
