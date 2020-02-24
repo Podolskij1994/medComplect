@@ -12,16 +12,23 @@
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+		@media (max-width: $media-pc)
+			flex-direction: column
 	&--logoBar
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
 		padding: 15px 15px
+		@media (max-width: $media-pc)
+			flex-direction: column
 	&--searchBar
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
 		padding: 10px 15px
+		position: static
+		@media (max-width: $media-pc)
+			justify-content: center
 	&--slideBar
 	&--company
 		flex-direction: row
@@ -57,5 +64,8 @@
 			justify-content: start
 			align-items: center
 			flex-direction: row
+			@media (max-width: $media-pc)
+				flex-direction: column
+				padding-bottom: 15px
 
 

@@ -53,13 +53,7 @@ $(document).ready(function() {
 
 
 
-    const searchBarCatalog = document.querySelector('.searchBar--catalog'),
-            searchBarCatalogBottomBar = document.querySelector('.searchBar--catalog__bottomBar');
-
-    searchBarCatalog.addEventListener('click', () =>{
-        searchBarCatalog.classList.toggle('searchBar--catalog_active');
-        searchBarCatalogBottomBar.classList.toggle('searchBar--catalog__bottomBar_active');
-    })
+    
 
 
     const showBackOfProductCart = function () {
@@ -71,12 +65,12 @@ $(document).ready(function() {
                 displayToShow = item.querySelector('.recomend--item__back');
 
             btnShow.addEventListener('click', event => {
-                displayToShow.classList.add('recomend--item__back_active')
-                setTimeout(() => {displayToShow.classList.add('pause')}, 1000);
+                displayToShow.classList.add('fadeIn');
+                displayToShow.classList.remove('fadeOut');
             });
             btnUnShow.addEventListener('click', event => {
-                displayToShow.classList.remove('pause')
-                setTimeout(() => {displayToShow.classList.remove('recomend--item__back_active')}, 950);
+                displayToShow.classList.remove('fadeIn');
+                displayToShow.classList.add('fadeOut');
             });
         })
     }
@@ -110,5 +104,77 @@ $(document).ready(function() {
     if (aboutWrapper) {
         tabsAbout();
     }
+
+    const searchHeader = function () {
+
+        //Кнопка поиск
+        const    wrapper = document.querySelector('.searchBar--search'),
+                    showBtn = wrapper.querySelector('.searchBar--search__button_show'),
+                    unShowBtn = wrapper.querySelector('.searchBar--search__button_close'),
+                    btnHidden = wrapper.querySelector('.searchBar--search__buttons'),
+                    navVisibility = wrapper.querySelector('.searchBar--nav'),
+                    input = wrapper.querySelector('.searchBar--search__input');
+
+        showBtn.addEventListener('click', event => {
+            showBtn.classList.add('fadeOut');
+            showBtn.classList.remove('fadeIn');
+            btnHidden.classList.add('fadeIn');
+            btnHidden.classList.remove('fadeOut');
+            navVisibility.classList.add('fadeOut');
+            navVisibility.classList.remove('fadeIn');
+            input.value = '';
+        })
+
+        unShowBtn.addEventListener('click', event => {
+            showBtn.classList.remove('fadeOut');
+            showBtn.classList.add('fadeIn');
+            btnHidden.classList.remove('fadeIn');
+            btnHidden.classList.add('fadeOut');
+            navVisibility.classList.remove('fadeOut');
+            navVisibility.classList.add('fadeIn');
+        })
+        //КАталог
+        const searchBarCatalog = document.querySelector('.searchBar--catalog'),
+                searchBarCatalogBottomBar = document.querySelector('.searchBar--catalog__bottomBar'),
+                showRightBar = searchBarCatalogBottomBar.querySelectorAll('.searchBar--catalog__link_right');
+                
+        // const checkSearchBar = function () { 
+        //     const target = event.target;
+            
+        //     if (!target.closest(".searchBar--catalog__bottomBar") && !target.matches('.searchBar--catalog')) {
+        //         searchBarCatalogBottomBar.style.height = "";
+        //         document.removeEventListener('click', checkSearchBar);
+        //     }
+        // }
+
+        showRightBar[1].addEventListener('click', event => {
+            let panel = event.target.querySelector('div');
+            console.log(panel.dataset.height === panel.style.height, panel.style.height, panel.dataset.height);
+            if (panel.style.height === panel.dataset.height) {
+                panel.style.height = "";
+            }
+            else {
+                panel.style.height = panel.dataset.height;
+            }
+
+        })
+        
+        searchBarCatalog.addEventListener('click', () =>{
+            if (searchBarCatalogBottomBar.style.height === searchBarCatalogBottomBar.dataset.height && event.target.matches('.searchBar--catalog')) {
+                searchBarCatalogBottomBar.style.height = "";
+            }
+            else {
+                searchBarCatalogBottomBar.style.height = searchBarCatalogBottomBar.dataset.height;
+                // document.addEventListener('click', checkSearchBar);
+            }
+            
+        })
+
+
+    }
+
+
+    searchHeader();
+
     
 })

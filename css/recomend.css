@@ -18,6 +18,7 @@
   border: 1px solid #EEEEEE;
   border-radius: 5px;
   padding: 25px 16px 0 24px;
+  z-index: 1;
 }
 
 @media (max-width: 1200px) {
@@ -36,9 +37,9 @@
   padding: 47px 24px 24px 37px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  display: none;
-  animation-name: fade;
-  animation-duration: 2s;
+  display: block;
+  z-index: 1;
+  opacity: 0;
 }
 
 .recomend--item__back_active {
@@ -183,6 +184,7 @@
   top: 10px;
   right: 12px;
   width: 10px;
+  z-index: 2;
 }
 
 .recomend--item__circles:hover {

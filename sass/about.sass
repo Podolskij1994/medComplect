@@ -1,3 +1,4 @@
+@import "media";
 .about 
     &--wrapper
         width: 100%
@@ -8,12 +9,21 @@
             height: 45px
             display: flex
             align-items: center
+            @media (max-width:$media-pc)
+                height: auto
         &__bottom
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
             background: #ffffff
             border-radius: 0 0 5px 5px
             padding: 35px 40px 42px
             margin: 0
+            @media (max-width:$media-pc)
+                padding: 15px
+                max-height: 500px
+                overflow-y: scroll
+    &--list
+        @media (max-width:$media-pc)
+            flex-direction: column
     &--list
         display: flex
         align-items: center
@@ -30,6 +40,9 @@
         align-items: center
         transition: 0.3s
         height: 100%
+        @media (max-width:$media-pc)
+            width: 100%
+            padding: 5px 0
         & p
             margin: 0px auto
         &:hover
@@ -42,8 +55,12 @@
                 cursor: default
         &:nth-child(1)
             border-top-left-radius: 5px
+            @media (max-width:$media-pc)
+                border-top-right-radius: 5px
         &:nth-last-child(1)
             border-top-right-radius: 5px
+            @media (max-width:$media-pc)
+                border-top-right-radius: 0
     &--bottom
         &__item
             display: none
@@ -66,6 +83,8 @@
             display: flex
             justify-content: space-between
             align-items: center
+            @media (max-width:$media-pc)
+                align-items: center;
         &__row
             display: flex
             justify-content: space-between
@@ -83,16 +102,24 @@
             height: 240px
             width: 1px
             background: #A6A6A6
+            @media (max-width:$media-pc)
+                display: none
     &--review
         &__wrapper
             display: flex
             justify-content: space-between
             margin: 21px 0 -9px
+            @media (max-width:$media-pc)
+                flex-direction: column-reverse;
+                align-items: center;
+                margin: 0
         &__left
             padding-top: 12px
         &__slider
             position: relative
             padding: 0 50px 0 
+            @media (max-width:$media-pc)
+                padding: 0 27px 0 33px
         &__item
         &__row
             display: flex
@@ -122,8 +149,12 @@
             font-weight: 300
             letter-spacing: 0.025em
             width: 465px
+            @media (max-width:$media-pc)
+                width: 240px
         &__right
             width: 380px
+            @media (max-width:$media-pc)
+                width: 300px
         &__title
             font-size: 1.42857em
             line-height: 1.2em
@@ -131,7 +162,7 @@
             color: #1c1c1c
             margin-bottom: 30px
         &__input
-            width: 380px
+            width: 100%
             padding: 0 5px 6px 1px
             border: 0
             border-bottom: 1px solid #979797

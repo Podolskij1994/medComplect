@@ -90,19 +90,30 @@ a
 @import "header";;
 @import "footer";
 
-@keyframes fade 
-    from
-        opacity: 0
-    50%
-        opacity: 1
-    to
-        opacity: 0
-
 @keyframes fadeIn
-    from
+    0%
         opacity: 0
-    to
+        z-index: 1
+    1%
+        opacity: 0.01
+        z-index: 3
+    100%
         opacity: 1
+        z-index: 3
 
-.pause
-    animation-play-state: paused
+@keyframes fadeOut
+    0%
+        opacity: 1
+        z-index: 3
+    100%
+        opacity: 0
+        z-index: 1
+
+
+.fadeIn
+    animation: fadeIn 1s 1
+    animation-fill-mode: forwards
+
+.fadeOut
+    animation: fadeOut 1s 1
+    animation-fill-mode: forwards

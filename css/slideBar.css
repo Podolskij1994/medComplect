@@ -59,3 +59,13 @@
   background: #345E6B;
   cursor: default;
 }
+
+.slideBar__br_visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .slideBar__br_visible {
+    display: block;
+  }
+}

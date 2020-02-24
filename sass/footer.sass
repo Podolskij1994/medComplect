@@ -1,9 +1,15 @@
+@import "media";
 .footer
     &__row
         display: flex
         align-items: start
+        @media (max-width: $media-pc)
+            flex-direction: column
+            align-items: center
         &_margin
             margin-bottom: 55px
+            @media (max-width: $media-pc)
+                margin-bottom: 15px
     &__title
         font-size: 1.2857em
         line-height: 1.22222em
@@ -13,10 +19,17 @@
         &__title
             text-decoration: underline
             margin-bottom: 10px
+            @media (max-width: $media-pc)
+                text-align: center
         &__list
             margin-right: 62px
+            @media (max-width: $media-pc)
+                margin-right: 0
             & li
                 width: 308px
+                @media (max-width: $media-pc)
+                    width: max-content
+                    margin: 0px auto
                 & a
                     font-size: 0.92857em
                     line-height: 1.53846em
@@ -25,10 +38,17 @@
         &__title
             text-decoration: underline
             margin-bottom: 10px
+            @media (max-width: $media-pc)
+                text-align: center
         &__list
             margin-right: 78px
+            @media (max-width: $media-pc)
+                margin-right: 0
             & li
                 width: 223px
+                @media (max-width: $media-pc)
+                    width: max-content
+                    margin: 0px auto
                 & a
                     font-size: 0.92857em
                     line-height: 1.53846em
@@ -36,11 +56,18 @@
                     display: block
     &--menu
         padding-top: 32px
+        @media (max-width: $media-pc)
+            padding-top: 0
         &__list
             margin-right: 91px
+            @media (max-width: $media-pc)
+                margin-right: 0
             & li
                 width: 208px
                 margin-bottom: 10px
+                @media (max-width: $media-pc)
+                    width: max-content
+                    margin: 0px auto
                 &:nth-last-child(1)
                     margin-bottom: 0
                 & a
@@ -52,48 +79,72 @@
         padding-top: 32px
         display: flex
         flex-direction: column
+        @media (max-width: $media-pc)
+            padding-top: 0
         &__phone
             font-size: 1.28571em
             line-height: 1.166666em
             margin-bottom: 2px
+            @media (max-width: $media-pc)
+                margin: 0px auto
+                display: block
         &__mail
             font-size: 1.14285em
             line-height: 1.1875em
             margin: 12px 0 13px
             color: #606060
+            @media (max-width: $media-pc)
+                margin: 6px auto
         &__text
             font-size: 1.28571em
             line-height: 1.5em
             color: #1C1C1C
             margin-bottom: 25px
+            @media (max-width: $media-pc)
+                text-align: center
+                margin-bottom: 10px
             &_time
                 color: #606060
         &__icons
             display: flex
             width: 80px
             justify-content: space-between
+            @media (max-width: $media-pc)
+                margin: 0px auto
     &--address
         display: flex
         flex-direction: column
         &__title
             margin-bottom: 20px
+            @media (max-width: $media-pc)
+                margin-bottom: 10px
+                text-align: center
         &__btn
             width: 201px
             height: 35px
             border-radius: 40px
             margin-bottom: 15px
             margin-right: 29px
+            @media (max-width: $media-pc)
+                margin: 0 auto 15px
         &__link
             font-size: 0.85714em
             line-height: 1.166666em
             color: #1c1c1c
+            @media (max-width: $media-pc)
+                margin: 0px auto
+                display: block
     &__map
         width: 269px
         height: 155px
         margin-right: 170px
+        @media (max-width: $media-pc)
+            margin: 0px auto
     &--mailing
         &__title
             margin-bottom: 20px
+            @media (max-width: $media-pc)
+                margin: 15px 0
         &__input
             width: 400px
             font-weight: 300
@@ -105,6 +156,10 @@
             border-bottom: 1px solid #9E9E9E
             margin-bottom: 10px
             color: #000000
+            @media (max-width: $media-pc)
+                width: 300px
+                margin: 0px auto 10px
+                display: block
             &:placeholder
                 color: #4F4F4F
         &__text
@@ -112,19 +167,33 @@
             line-height: 1.25em
             font-weight: 300
             margin-bottom: 13px
+            text-align: center
         &__btn
             width: 175px
             height: 35px
             border-radius: 40px
+            @media (max-width: $media-pc)
+                margin: 0px auto
+                display: block
     &--bottom
         &__wrapper
             padding: 17px 0
             background: #ffffff
             margin-top: 33px
+            @media (max-width: $media-pc)
+                margin-top: 15px
+                padding: 0
         &__text
             font-size: 1em
             color: #1c1c1c
             margin-right: 171px
+            @media (max-width: $media-pc)
+                margin: 15px auto 0
+                order: 3
+                text-align: center
         &__link
             font-size: 1em
             margin-right: auto
+            @media (max-width: $media-pc)
+                margin: 10px auto
+                display: block

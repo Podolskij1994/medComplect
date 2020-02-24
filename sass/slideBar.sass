@@ -1,3 +1,4 @@
+@import "media";
 .slideBar
     &__wrapper
         display: flex
@@ -41,3 +42,8 @@
                 &:hover
                     background: #345E6B
                     cursor: default
+    &__br
+        &_visible
+            display: none
+            @media (max-width: $media-pc)
+                display: block
