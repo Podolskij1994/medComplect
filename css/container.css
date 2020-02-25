@@ -48,6 +48,11 @@
   }
 }
 
+.ycont--slideBar {
+  padding: 74px 15px 0;
+  background: #DEE6ED;
+}
+
 .ycont--company {
   flex-direction: row;
   justify-content: space-between;

@@ -1,3 +1,25 @@
+.header-menuIcon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.header-menuIcon::before {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header-menuIcon::before {
+    display: block;
+  }
+}
+
+.header-menuIcon:hover {
+  cursor: pointer;
+}
+
 .header--regist {
   background: #F1F1F1;
   padding: 10px 0;
@@ -21,6 +43,7 @@
 @media (max-width: 1200px) {
   .header--regist__right {
     margin-top: 15px;
+    display: none;
   }
 }
 

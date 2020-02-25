@@ -176,5 +176,19 @@ $(document).ready(function() {
 
     searchHeader();
 
+
+    //МЕНЮХА
+
+    const moveMenuBars = (menuSelector, menuCloseBtnSelector, activeClass) => {
+        const menu = document.querySelector(menuSelector),
+            menuCloseBtn = menu.querySelector('svg'),
+            menuOpenBtn = document.querySelector(menuCloseBtnSelector);
+        
+        const toggleMenuClass = () => menu.classList.toggle(activeClass);
+
+        menuCloseBtn.addEventListener('click', toggleMenuClass );
+        menuOpenBtn.addEventListener('click', toggleMenuClass);
+    } 
+moveMenuBars('.bars', '.header-menuIcon', 'bars_active')
     
 })

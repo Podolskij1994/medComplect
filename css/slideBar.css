@@ -1,10 +1,35 @@
+.slideBar__layover {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slideBar__img {
+  position: absolute;
+  right: -200px;
+  top: 0;
+  width: 742px;
+  height: 414px;
+}
+
+.slideBar__img div {
+  width: 445px;
+  height: 100%;
+  background: linear-gradient(90deg, #DEE6ED 0%, rgba(222, 230, 237, 0.567708) 62.5%, rgba(222, 230, 237, 0) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .slideBar__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   flex-direction: column;
   width: max-content;
   margin: 0px auto;
+  position: relative;
+  height: 100%;
 }
 
 .slideBar__title {
@@ -28,7 +53,7 @@
 
 .slideBar__circles {
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 70px;
   display: flex;
 }

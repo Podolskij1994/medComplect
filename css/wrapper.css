@@ -10,7 +10,7 @@
 
 .wrapper--slideBar {
   height: 414px;
-  padding: 74px 0 0;
+  overflow: hidden;
 }
 
 .wrapper--company {
