@@ -74,7 +74,10 @@ $(document).ready(function() {
             });
         })
     }
-    showBackOfProductCart();
+    if (document.querySelectorAll('.recomend--item')) {
+        showBackOfProductCart();
+    }
+    
 
     //Табы на странице продукт
     const aboutWrapper = document.querySelector('.about--wrapper');
@@ -173,9 +176,9 @@ $(document).ready(function() {
 
     }
 
-
-    searchHeader();
-
+    if (document.querySelector('.searchBar--search__button_show')) {
+        searchHeader();
+    }
 
     //МЕНЮХА
 
@@ -188,7 +191,33 @@ $(document).ready(function() {
 
         menuCloseBtn.addEventListener('click', toggleMenuClass );
         menuOpenBtn.addEventListener('click', toggleMenuClass);
-    } 
-moveMenuBars('.bars', '.header-menuIcon', 'bars_active')
-    
+    };
+    if (document.querySelector('.bars')) {
+        moveMenuBars('.bars', '.header-menuIcon', 'bars_active')
+    }
+    //Показать скрыть текста на странице поиск
+    const showText = function () {
+        const wrapper = document.querySelector('.search--text'),
+                    text = wrapper.querySelector('.search--text__text'),
+                    showBtn = wrapper.querySelector('.search--text__show'),
+                    hideBlock = wrapper.querySelector('.search--text__white');
+
+        showBtn.addEventListener('click', event => {
+            let target = event.target;
+            if (target.textContent.trim() === 'Показать все') {
+                text.style.height = 'auto';
+                target.textContent = 'Скрыть';
+                hideBlock.style.display = 'none';
+            }
+            else {
+                text.style.height = '';
+                target.textContent = 'Показать все';
+                hideBlock.style.display = '';
+            }
+        })
+    }
+
+    if (document.querySelector('.search--text')){
+        showText();
+    }
 })
